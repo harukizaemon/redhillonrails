@@ -1,0 +1,6 @@
+require 'action_controller/dispatcher' unless defined?(ActionController::Dispatcher)
+ActionController::Dispatcher.send(:include, HarukiZaemon::ActsAsTeapot::ActionController::Dispatcher)
+ActionController::AbstractRequest.send(:include, HarukiZaemon::ActsAsTeapot::ActionController::AbstractRequest)
+ActionController::Routing.send(:include, HarukiZaemon::ActsAsTeapot::ActionController::Routing)
+ActionController::StatusCodes.send(:include, HarukiZaemon::ActsAsTeapot::ActionController::StatusCodes)
+Mime::Type.register("application/coffee-pot-command", :htcpcp)

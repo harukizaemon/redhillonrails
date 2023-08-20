@@ -1,0 +1,21 @@
+= Acts As Teapot
+
+Acts As Teapot is a Ruby on Rails plugin that ensures your Ruby on Rails applications conform to
+http://www.ietf.org/rfc/rfc2324.txt. Our assumption here is that your application is not a coffee
+pot and does not understand the Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0). Thus, if ever a BREW request or any
+other request with the Content-Type set to "application/coffee-pot-command" is received, the server will respond with
+418 I’m a teapot. 
+
+== Installation
+
+You have two choices for installation. The first uses a gem (recommended):
+
+  config.gem "harukizaemon-acts_as_teapot", :lib => "acts_as_teapot", :source => "http://gems.github.com"
+
+Or you can use the Rails plugin
+
+  $ ruby script/plugin install git://github.com/harukizaemon/acts_as_teapot.git
+
+=== License
+
+This plugin is copyright 2009 by Simon Harris and is released under the MIT license.

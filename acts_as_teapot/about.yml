@@ -1,0 +1,5 @@
+author: haruki.zaemon@gmail.com
+summary: Ensure your Ruby on Rails applications conform to RFC2324.
+homepage: http://github.com/harukizaemon/acts_as_teapot
+license: MIT
+rails_version: 2.2

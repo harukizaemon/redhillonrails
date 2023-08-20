@@ -1,0 +1,15 @@
+[REVISION 20071128]
+
+[FIXED] Workaround to ensure plugin is only ever loaded once.
+
+[REVISION 20071107]
+
+[FIXED] Listed redhillonrails_core as a dependency.
+
+[REVISION 20071009]
+
+[FIXED] Placed modules into correct namespace.
+
+[REVISION 20071009]
+
+[NEW] Initial version. Needs some documentation and some integration tests.

@@ -1,0 +1,27 @@
+= Conventional Validations
+
+Conventional Validations is a plugin that attempts to apply validation based on the
+naming of columns. Specifically, the plugin searches for validation methods such that a
+column named +foo+ or ending in +_foo+ would be validated using a method named
++validates_foo+.
+
+For example, by defining a class method as:
+
+  def self.validates_phone(*attr_names)
+    validates_format_of attr_names, :with => /[0-9]+(\.[0-9]+)*/, :allow_nil => true 
+  end
+
+Any columns named +phone+ or ending in +_phone+ would be automatically validated.
+
+=== Dependencies
+
+* RedHill on Rails Core (redhillonrails_core)
+
+=== See Also
+
+* Schema Validations (schema_validations).
+
+=== License
+
+This plugin is copyright 2007 by RedHill Consulting, Pty. Ltd. and is released
+under the MIT license.

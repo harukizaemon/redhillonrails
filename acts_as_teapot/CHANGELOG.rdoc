@@ -1,0 +1,13 @@
+== 1.0.2 released 2009-01-11
+
+* Respond to ALL BREW and HTCPCP requests irrespective of routing.
+
+* Ensure old-style plugin works.
+
+== 1.0.1 released 2009-01-10
+
+* Changed copyright and fixed documentation.
+
+== 1.0.0 released 2009-01-07
+
+* Initial version.
